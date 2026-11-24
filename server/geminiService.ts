@@ -4,12 +4,12 @@ import {
   buildGradingSystemInstruction,
   buildOutlineCoachSystemInstruction,
   buildSampleEssaySystemInstruction,
-} from './prompts';
+} from './prompts.ts';
 import {
   computeOverallBand,
   countWords,
   normalizeCriterionScore,
-} from '../src/utils/scoring';
+} from '../src/utils/scoring.ts';
 import type {
   DebateMessage,
   DetectedTypeResult,
