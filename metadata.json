@@ -1,0 +1,6 @@
+{
+  "name": "IELTS WITH FELIX",
+  "description": "Ứng dụng luyện viết IELTS Writing Task 2 chuẩn giám khảo: chấm bài theo band descriptors, phản biện ý tưởng Debate Arena, bài mẫu Band 9 và sổ từ vựng cá nhân.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

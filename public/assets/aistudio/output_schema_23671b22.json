@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "scores": {
+      "type": "object",
+      "properties": {
+        "task_response": { "type": "integer" },
+        "coherence_cohesion": { "type": "integer" },
+        "lexical_resource": { "type": "integer" },
+        "grammatical_range_accuracy": { "type": "integer" }
+      },
+      "required": ["task_response", "coherence_cohesion", "lexical_resource", "grammatical_range_accuracy"]
+    },
+    "overall_band": { "type": "number" },
+    "confidence_note": { "type": "string" },
+    "strengths": { "type": "array", "items": { "type": "string" } },
+    "idea_critique": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "criterion": { "type": "string", "enum": ["TR", "CC"] },
+          "point": { "type": "string" },
+          "maps_to_band": { "type": "integer" },
+          "deducted": { "type": "boolean" }
+        },
+        "required": ["criterion", "point", "maps_to_band", "deducted"]
+      }
+    },
+    "language_notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "criterion": { "type": "string", "enum": ["LR", "GRA"] },
+          "note": { "type": "string" },
+          "systematic": { "type": "boolean" },
+          "deducted": { "type": "boolean" }
+        },
+        "required": ["criterion", "note", "systematic", "deducted"]
+      }
+    },
+    "gap_to_next_band": { "type": "array", "items": { "type": "string" } },
+    "coach_questions": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": ["scores", "overall_band", "confidence_note", "strengths", "idea_critique", "language_notes", "gap_to_next_band", "coach_questions"]
+}

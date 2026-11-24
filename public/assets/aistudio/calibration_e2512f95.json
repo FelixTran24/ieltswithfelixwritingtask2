@@ -1,0 +1,67 @@
+{
+  "note": "Điểm giáo viên/Examiner do người học cung cấp. 'ai_first_pass' là lần chấm đầu của AI, dùng để cho thấy hướng lệch cần tránh.",
+  "calibration_rules": [
+    "AI từng chấm thấp hơn giáo viên 1-2 band vì áp tiêu chuẩn lập luận chặt hơn descriptor.",
+    "Trước khi trừ điểm cho lỗi ý tưởng, kiểm tra bài band 9 đính kèm có lỗi tương tự mà vẫn được 9 không.",
+    "Một câu cơ chế hợp lý cho mỗi claim là đủ để tính là well supported.",
+    "Steelman phe đối lập và nhân quả chặt chẽ là coaching, không phải cơ sở trừ điểm.",
+    "LR/GRA chỉ trừ lỗi cùng một loại lặp lại; lỗi đơn lẻ là minor.",
+    "Band 8 LR chấp nhận occasional inaccuracies in word choice and collocation."
+  ],
+  "examples": [
+    {
+      "id": "gender_leadership",
+      "prompt": "It is believed by some that women make better leaders than men, such as in companies or government. Do you agree or disagree with this belief?",
+      "essay": "One school of thought holds that women are perceived to have a better ability to be leaders than male counterparts in businesses and government. While I acknowledge the reasons behind this thinking, I would argue that this cannot always be true in several scenarios.\n\nOn the one hand, it is understandable why some people believe that women have superior leadership skills compared to men. This is because females are often said to demonstrate strong emotional sensitivity, which leads to the strong emphasis on open communication with employees. Therefore, their approach promotes personal engagement in the working environment where it can be adjusted to fulfill the workers’ overall well-being and organizational sustainability over time. However, when economic downturns and impactful crises occur, they tend to be emotionally-driven and reluctant to make life-changing decisions which consequently results in missing potential opportunities to alleviate the situation.\n\nOn the other hand, I am convinced that being a leader also requires decisiveness and pressure tolerance, irrespective of gender because business administration involves crisis management, intense competition and constant pressure, which requires their emotions to be rather unshakable in risky contexts, such as economic recession. For instance, the Apple company, which was led by Steve Jobs, was on the edge of bankruptcy due to his financial instability in 1997. He eventually devised a dangerous strategy of selling a majority of uncommonly used products for a low price, and this, in turn, culminated in stabilizing the cash flow and brought success after launching the revolutionary iMac.\n\nIn conclusion, while female leaders can readily cope with social and communicational conflicts in the working environment, male leaders can generally resolve external issues during crises, yet I still believe that the ways to approach flexibly depend on the situation they face.",
+      "teacher_scores": {
+        "task_response": 7,
+        "coherence_cohesion": 7,
+        "lexical_resource": 8,
+        "grammatical_range_accuracy": 8
+      },
+      "ai_first_pass": {
+        "task_response": 6,
+        "coherence_cohesion": 6,
+        "lexical_resource": 7,
+        "grammatical_range_accuracy": 7
+      },
+      "lesson": "Các lỗi ý tưởng (khái quát hóa theo giới, ví dụ chưa khớp claim) khớp nguyên văn phần tiêu cực của Band 7, không phải Band 6. Ba lỗi ngữ pháp thuộc ba loại khác nhau nên không phải lỗi hệ thống. Từ không phổ thông được dùng đúng nên LR 8."
+    },
+    {
+      "id": "food_import",
+      "prompt": "Some countries import a large amount of food from other countries. To what extent is this a positive or negative trend?",
+      "essay": "Food supply is of obvious critical importance to secure a country's existence. A country's self-sustenance regarding supplying its own food is optimal, but its importation is sometimes necessary, fortunately viable and mostly non-problematic -- assuming catastrophic world-conditions do not force isolationism.\n\nIdeally, individual countries should be at least potentially self-sufficient if not autonomous regarding food production for their population. But what is ideal is often not real. Blameworthy causalities for a nation's food shortage include political malfeasance, governmental ineptitude, and war. Non-blameworthy causalities include a sometimes-whimsical global economy and natural changing climate patterns inhibiting agricultural production -- history provides countless, millennia-old examples of once thriving regions eventually vanishing due to either freezing or desertification. Hence, regardless of the cause, securing viable sources of food as imports for countries unable to produce enough is positive and humane -- at least in that it reduces or prevents domestic malnutrition and potential starvation.\n\nFood importation is also positive because it stimulates economic activity, creates cross-cultural partnerships, and promotes opportunity to enjoy regionally exotic foods. Agribusiness is a worldwide, multinational enterprise providing millions of jobs and national revenue. Food importation also facilitates complex intertwinement and engagement of various countries with each other. This engagement promotes cooperation and reduces potential conflict, namely war. Additionally, with food imports people can experiment with different international staples, herbs, spices, or regional delicacies -- such experimentation brings comfort and joy to the masses.\n\nIn conclusion, catastrophic world-conditions could force certain countries into isolation, consequently food-supply independence would be paramount. Barring such a catastrophe, the importation of food among nations is a positive trend.",
+      "teacher_scores": {
+        "task_response": 9,
+        "coherence_cohesion": 9,
+        "lexical_resource": 9,
+        "grammatical_range_accuracy": 9
+      },
+      "ai_first_pass": {
+        "task_response": 7,
+        "coherence_cohesion": 8,
+        "lexical_resource": 8,
+        "grammatical_range_accuracy": 8
+      },
+      "lesson": "AI đã coi phần phân loại nguyên nhân là lạc đề, nhưng đó là counter có chủ đích (regardless of the cause). Support ở mức khẳng định kèm một câu giải thích đủ cho Band 9, giống bài band 9 mẫu về hàng không giá rẻ. Việc không có đoạn riêng cho phe đối lập không phải căn cứ để trừ điểm."
+    },
+    {
+      "id": "vehicle_free_days",
+      "prompt": "Some cities have vehicle-free days when private cars, trucks and motorcycles are banned from the city center. People are encouraged to use public transportation such as buses, taxis and metro on vehicle-free days. Do the advantages of this outweigh the disadvantages?",
+      "essay": "It is widely recognized that the prohibition of personal vehicles in inner-city areas is generally implemented in some cities to foster the use of public transportation. While this policy yields potential environmental benefits, I contend that its disruption of individuals' daily lives and economic development overshadows the advantages it offers.\n\nGranted, vehicle-free days may provide assistance in curbing urban pollution by reducing the number of personal vehicles such as cars and trucks, which results in the immediate alleviation of long-lasting traffic congestion. This can temporarily help mitigate air pollution across city centers with a high-density population concentrated in one specific area. Furthermore, the current development can be seen as having a symbolic purpose and fostering a movement to encourage local people to experience alternative modes of transit, such as metros and buses, thereby reinforcing the public's attitude towards green mobility. However, this may serve as a surface-level method when it fails to produce long-term behavioral changes once the vehicle-free days end.\n\nOn the other hand, I am convinced that the aforementioned benefits pale into insignificance when compared to the interruption of people’s lives. Economically, when delivery trucks, vans, and cars are banned, supply chains can be broken due to the heavy reliance on logistics services in city centers, such as for food deliveries and customer markets. This results in financial losses, decreased profits, and a reduction in the monetary flow of local enterprises. Additionally, in terms of public transportation services, there will be an uncontrollable influx of people using public vehicles such as buses and metros. Consequently, public transport corporations have to provide more frequent train services, while a lack of proper operation leads to people constantly waiting for these particular services. If this happens, the interruption can negatively affect residents' work and life due to the tardiness of overloaded buses.\n\nTo summarize, while vehicle-free days may be extolled for conferring environmental benefits, I would contend that these benefits are questionable at best and that the drawbacks are far more pronounced, as seen in the unexpected disruption to daily life by banning personal vehicles.",
+      "teacher_scores": {
+        "task_response": null,
+        "coherence_cohesion": null,
+        "lexical_resource": 8,
+        "grammatical_range_accuracy": null
+      },
+      "ai_first_pass": {
+        "task_response": 7,
+        "coherence_cohesion": 7,
+        "lexical_resource": 7,
+        "grammatical_range_accuracy": 8
+      },
+      "lesson": "Chỉ có điểm LR của giáo viên (8). Từ vựng không phổ thông dùng đúng, collocation lệch là đơn lẻ và thuộc văn phong nên không trừ."
+    }
+  ]
+}
