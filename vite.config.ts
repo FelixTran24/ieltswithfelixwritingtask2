@@ -1,4 +1,3 @@
-process.env.VITE_CONFIG_NATIVE_IGNORE_WARNING = 'true';
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import fs from 'fs';
